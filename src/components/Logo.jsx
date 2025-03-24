@@ -1,8 +1,8 @@
 import React from 'react'
-
+import logo from '/Logo_simpligram.png'
 function Logo({width= '100%'}) {
   return (
-    <img src="src/assets/Logo_simpligram.png" style={{width}} alt="logo placeholder"/>
+    <img src={logo} style={{width}} alt="Simpligram logo"/>
   )
 }
 
