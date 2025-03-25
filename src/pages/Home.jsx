@@ -29,18 +29,19 @@ function Home() {
   }
 
   return (
-    <div className='w-full py-8'>
+    <div className="w-full py-8">
       <Container>
-        <div className="flex flex-wrap">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap ">
           {posts.map((post) => (
-            <div className="p-2 w-1/4" key={post.$id}>
+            <div className="w-full sm:w-1/2 lg:w-1/4 p-2" key={post.$id}>
               <PostCard {...post} />
             </div>
           ))}
         </div>
       </Container>
     </div>
-  )
+  );
+  
 }
 
 export default Home

@@ -2,7 +2,7 @@ import React from 'react'
 import { Signup as SignupComponent } from '../components'
 function Signup() {
   return (
-    <div className='py-8'>
+    <div className='p-4 sm:py-8'>
       <SignupComponent />
       </div>
   )
